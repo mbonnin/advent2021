@@ -13,7 +13,6 @@ func main() {
 	totalDistance, totalDepth := 0, 0
 
 	fetchInput("input2.txt", totalDistance, totalDepth)
-
 }
 
 func fetchInput(path string, x int, y int) {
