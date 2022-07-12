@@ -39,9 +39,10 @@ func fetchInput(path string, x int, y int) {
 	fmt.Printf("total: %d\n", x*y)
 }
 
-func updateLocation(direction string, amount int, x int, y int) (int, int) {
+func updateLocation(direction string, amount int, x int, y int, aim int) (int, int) {
 	if direction == "forward" {
 		x += amount
+		y = aim * amount
 	}
 	if direction == "up" {
 		y -= amount
